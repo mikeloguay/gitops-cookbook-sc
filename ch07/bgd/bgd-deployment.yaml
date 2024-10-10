@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,10 +18,11 @@ spec:
         app: bgd
     spec:
       containers:
-      - image: quay.io/rhdevelopers/bgd:1.0.0
-        name: bgd
-        env:
-        - name: COLOR
-          value: "blue"
-        resources: {}
+        - image: quay.io/rhdevelopers/bgd:1.0.0
+          name: bgd
+          env:
+            - name: COLOR
+              value: "green"
+          resources: {}
 ---
+
